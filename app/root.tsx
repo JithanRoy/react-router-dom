@@ -2,7 +2,7 @@ import {
   Form,
   Scripts,
   ScrollRestoration,
-  isRouteErrorResponse,
+  isRouteErrorResponse, Link,
 } from "react-router";
 import type { Route } from "./+types/root";
 
@@ -31,10 +31,10 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <a href={`/contacts/1`}>Your Name</a>
+              <Link to={`/contacts/1`}>Your Name</Link>
             </li>
             <li>
-              <a href={`/contacts/2`}>Your Friend</a>
+              <Link to={`/contacts/2`}>Your Friend</Link>
             </li>
           </ul>
         </nav>
